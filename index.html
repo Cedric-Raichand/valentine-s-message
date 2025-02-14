@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine's Day!</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #ff6f61, #ffcccb);
+        font-family: "Arial", sans-serif;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      .heart {
+        font-size: 5rem;
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Valentine's Day!</h1>
+      <p>Wishing you a day filled with love, joy, and happiness. 💖</p>
+      <div class="heart">❤️</div>
+    </div>
+  </body>
+</html>
